@@ -1,0 +1,211 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+*{
+	font-family: 'Quicksand', sans-serif;
+	letter-spacing: 4px;
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+
+
+/*RENDEZVOUS LOGO*/
+
+.centerLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 5%;
+}
+
+
+/*WELCOME TO RENDEZVOUS*/
+
+p {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 50px; 
+	text-align:center;
+	margin: 0;
+	line-height: 120px;
+}
+
+/*MAIN PICTURE*/
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.greetings p {
+	width: 100vw;
+	margin: 2px auto;
+	line-height: 12px;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+/*CONTAINER FOR BUTTONS*/
+
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 10vh;
+}
+
+/*BUTTON 1 DESIGN*/
+
+.btn-1 {
+	margin-right: 50px;
+	width: 250px;
+	height: 60px;
+	border: none;
+	color: #372c2e;
+	border-radius: 4px;
+	transition: ease-out 0.3s;
+	font-size: 2rem;
+	outline: none;
+	border: 3px solid #372c2e;
+	position: relative;
+	z-index: 1;
+}
+
+.btn-1:hover {
+	color: #fff;
+	cursor: pointer;
+}
+
+.btn-1:before {
+	transition: 0.5s all ease;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	right: 50%;
+	bottom: 0;
+	opacity: 0;
+	content: "";
+	background-color: #372c2e;
+}
+
+.btn-1:hover:before {
+	transition: 0.5s all ease;
+	left: 0;
+	right: 0;
+	opacity: 1;
+	z-index: -1;
+}
+
+/*BUTTON 2 DESIGN*/
+
+.btn-2 {
+	width: 250px;
+	height: 60px;
+	border: none;
+	color: #372c2e;
+	border-radius: 4px;
+	transition: ease-out 0.3s;
+	font-size: 2rem;
+	outline: none;
+	border: 3px solid #372c2e;
+	position: relative;
+	z-index: 1;
+}
+
+.btn-2:hover {
+	color: #fff;
+	cursor: pointer;
+}
+
+.btn-2:before {
+	transition: 0.5s all ease;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	right: 50%;
+	bottom: 0;
+	opacity: 0;
+	content: "";
+	background-color: #372c2e;
+}
+
+.btn-2:hover:before {
+	transition: 0.5s all ease;
+	left: 0;
+	right: 0;
+	opacity: 1;
+	z-index: -1;
+}
+
+/*FOOTER DESIGN FOR ALL PAGES*/
+
+footer {
+	position: absolute;
+	bottom: 0;
+	background: #372c2e;
+	height: auto;
+	width: 100vw;
+	font-family: 'Quicksand', sans-serif;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #fff;
+}
+
+.footer-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.footer-content h3 {
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 3rem;
+	color: #da9c4d;
+}
+
+.footer-content p {
+	width: 100vw;
+	margin: 5px auto;
+	line-height: 15px;
+	font-size: 12px;
+}
+
+.footer-content span {
+	text-transform: uppercase;
+	opacity: .4;
+	font-weight: 200;
+}
+
+.socials {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0 1rem 0;
+}
+
+.socials li {
+	margin: 0 10px;
+}
+
+.socials a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.socials a i {
+	font-size: 1.1rem;
+	transition: color .4s ease;
+}
+
+.socials a:hover i {
+	color: #da9c4d;
+}
